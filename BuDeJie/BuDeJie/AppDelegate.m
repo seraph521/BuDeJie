@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "XFXTabBarController.h"
-
+#import "XFXADViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -19,6 +19,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+   // XFXADViewController * rootController = [[XFXADViewController alloc] init];
     XFXTabBarController * rootController = [[XFXTabBarController alloc] init];
     self.window.rootViewController = rootController;
     [self.window makeKeyAndVisible];

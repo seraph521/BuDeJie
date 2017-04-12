@@ -16,22 +16,40 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self setupNavBar];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setupNavBar
+{
+    // 左边按钮
+    // 把UIButton包装成UIBarButtonItem.就导致按钮点击区域扩大
+    
+    // 设置
+    UIBarButtonItem *settingItem =  [UIBarButtonItem itemWithimage:[UIImage imageNamed:@"mine-setting-icon"] highImage:[UIImage imageNamed:@"mine-setting-icon-click"] target:self action:@selector(setting)];
+    
+    // 夜间模型
+    UIBarButtonItem *nightItem =  [UIBarButtonItem itemWithimage:[UIImage imageNamed:@"mine-moon-icon"] selImage:[UIImage imageNamed:@"mine-moon-icon-click"] target:self action:@selector(night:)];
+    
+    self.navigationItem.rightBarButtonItems = @[settingItem,nightItem];
+    
+    // titleView
+    self.navigationItem.title = @"我的";
+    
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)night:(UIButton *)button
+{
+    button.selected = !button.selected;
+    
 }
-*/
+
+#pragma mark - 设置就会调用
+- (void)setting
+{
+    UIViewController * setVc = [[UIViewController alloc] init];
+    [self.navigationController pushViewController:setVc animated:YES];
+}
 
 @end

@@ -1,0 +1,25 @@
+//
+//  BuDeJie.pch
+//  BuDeJie
+//
+//  Created by LT-MacbookPro on 17/4/12.
+//  Copyright © 2017年 XFX. All rights reserved.
+//
+
+#import "UIView+Frame.h"
+#import "GlobalHeader.h"
+#import "UIImage+Image.h"
+#import "UIImage+Category.h"
+#import "UIView+Category.h"
+#import "UIView+LayoutFit.h"
+#import "UIFont+LayoutFit.h"
+#import "UIBarButtonItem+Item.h"
+#ifdef DEBUG // 调试
+
+#define XFXLog(...) NSLog(__VA_ARGS__)
+
+#else // 发布
+
+#define XFXLog(...)
+
+#endif
