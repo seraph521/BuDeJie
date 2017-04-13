@@ -233,11 +233,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuDeJie/Classes/New(&#x65b0;&#x5e16;) /Controller/XFXSubTagViewController.m"
-            timestampString = "513692654.527695"
+            timestampString = "513739866.106483"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "-loadData"
             landmarkType = "7">
          </BreakpointContent>
@@ -249,11 +249,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BuDeJie/Classes/New(&#x65b0;&#x5e16;) /Controller/XFXSubTagViewController.m"
-            timestampString = "513692654.527695"
+            timestampString = "513739866.106483"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "-loadData"
             landmarkType = "7">
          </BreakpointContent>

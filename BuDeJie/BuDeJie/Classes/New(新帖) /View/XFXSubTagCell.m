@@ -24,8 +24,6 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     
-    _iconImageView.layer.cornerRadius = 30;
-    _iconImageView.layer.masksToBounds = YES;
 }
 
 - (IBAction)subBtnClick:(UIButton *)sender {
@@ -47,7 +45,26 @@
     
     _numLabel.text = numStr;
     
-    [_iconImageView sd_setImageWithURL:[NSURL URLWithString:item.image_list] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    
+    [_iconImageView sd_setImageWithURL:[NSURL URLWithString:item.image_list] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"] options:SDWebImageCacheMemoryOnly completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        
+        // 1开启图形上下文
+        UIGraphicsBeginImageContextWithOptions(image.size, NO, 0);
+        // 2描述裁剪区域
+        UIBezierPath * path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
+        // 3设置裁剪区域
+        [path addClip];
+        // 4画图片
+        [image drawAtPoint:CGPointZero];
+        // 5取出图片
+        UIImage * newImage = UIGraphicsGetImageFromCurrentImageContext();
+        // 6关闭上下文
+        UIGraphicsEndImageContext();
+        
+        _iconImageView.image = newImage;
+        
+    }];
+    
 }
 
 @end

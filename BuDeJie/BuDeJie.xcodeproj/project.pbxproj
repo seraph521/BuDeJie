@@ -47,6 +47,11 @@
 		3CC544681E9E491700848924 /* XFXSubTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC544671E9E491700848924 /* XFXSubTagItem.m */; };
 		3CC5446F1E9E4EB400848924 /* XFXSubTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC5446D1E9E4EB400848924 /* XFXSubTagCell.m */; };
 		3CC544701E9E4EB400848924 /* XFXSubTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CC5446E1E9E4EB400848924 /* XFXSubTagCell.xib */; };
+		3CC544721E9F10FC00848924 /* XFXFriendTrendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CC544711E9F10FC00848924 /* XFXFriendTrendViewController.xib */; };
+		3CC544761E9F17C100848924 /* XFXLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC544741E9F17C100848924 /* XFXLoginRegisterViewController.m */; };
+		3CC544771E9F17C100848924 /* XFXLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CC544751E9F17C100848924 /* XFXLoginRegisterViewController.xib */; };
+		3CC5447A1E9F205500848924 /* XFXLoginRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC544791E9F205500848924 /* XFXLoginRegisterView.m */; };
+		3CC5447E1E9F211F00848924 /* XFXLoginRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CC5447D1E9F211F00848924 /* XFXLoginRegisterView.xib */; };
 		3CE547A31E9CA19B009F7EE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE547A21E9CA19B009F7EE2 /* main.m */; };
 		3CE547A61E9CA19B009F7EE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE547A51E9CA19B009F7EE2 /* AppDelegate.m */; };
 		3CE547AE1E9CA19B009F7EE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CE547AD1E9CA19B009F7EE2 /* Assets.xcassets */; };
@@ -135,6 +140,13 @@
 		3CC5446C1E9E4EB400848924 /* XFXSubTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFXSubTagCell.h; sourceTree = "<group>"; };
 		3CC5446D1E9E4EB400848924 /* XFXSubTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFXSubTagCell.m; sourceTree = "<group>"; };
 		3CC5446E1E9E4EB400848924 /* XFXSubTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFXSubTagCell.xib; sourceTree = "<group>"; };
+		3CC544711E9F10FC00848924 /* XFXFriendTrendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFXFriendTrendViewController.xib; sourceTree = "<group>"; };
+		3CC544731E9F17C100848924 /* XFXLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFXLoginRegisterViewController.h; sourceTree = "<group>"; };
+		3CC544741E9F17C100848924 /* XFXLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFXLoginRegisterViewController.m; sourceTree = "<group>"; };
+		3CC544751E9F17C100848924 /* XFXLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFXLoginRegisterViewController.xib; sourceTree = "<group>"; };
+		3CC544781E9F205500848924 /* XFXLoginRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFXLoginRegisterView.h; sourceTree = "<group>"; };
+		3CC544791E9F205500848924 /* XFXLoginRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFXLoginRegisterView.m; sourceTree = "<group>"; };
+		3CC5447D1E9F211F00848924 /* XFXLoginRegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XFXLoginRegisterView.xib; sourceTree = "<group>"; };
 		3CE5479E1E9CA19B009F7EE2 /* BuDeJie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuDeJie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CE547A21E9CA19B009F7EE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../main.m; sourceTree = "<group>"; };
 		3CE547A41E9CA19B009F7EE2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -396,6 +408,10 @@
 			children = (
 				3CE547D61E9CA8C6009F7EE2 /* XFXFriendTrendViewController.h */,
 				3CE547D71E9CA8C6009F7EE2 /* XFXFriendTrendViewController.m */,
+				3CC544711E9F10FC00848924 /* XFXFriendTrendViewController.xib */,
+				3CC544731E9F17C100848924 /* XFXLoginRegisterViewController.h */,
+				3CC544741E9F17C100848924 /* XFXLoginRegisterViewController.m */,
+				3CC544751E9F17C100848924 /* XFXLoginRegisterViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -410,6 +426,9 @@
 		3CE547C01E9CA42D009F7EE2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3CC544781E9F205500848924 /* XFXLoginRegisterView.h */,
+				3CC544791E9F205500848924 /* XFXLoginRegisterView.m */,
+				3CC5447D1E9F211F00848924 /* XFXLoginRegisterView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -669,7 +688,10 @@
 				3CC544521E9E031B00848924 /* LaunchImage.png in Resources */,
 				3CE547B11E9CA19B009F7EE2 /* LaunchScreen.storyboard in Resources */,
 				3CC5444F1E9E031B00848924 /* LaunchImage-700@2x.png in Resources */,
+				3CC544771E9F17C100848924 /* XFXLoginRegisterViewController.xib in Resources */,
+				3CC5447E1E9F211F00848924 /* XFXLoginRegisterView.xib in Resources */,
 				3CC544511E9E031B00848924 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
+				3CC544721E9F10FC00848924 /* XFXFriendTrendViewController.xib in Resources */,
 				3CC544701E9E4EB400848924 /* XFXSubTagCell.xib in Resources */,
 				3CC5444D1E9E031B00848924 /* LaunchImage-568h@2x.png in Resources */,
 				3CC544501E9E031B00848924 /* LaunchImage-800-667h@2x.png in Resources */,
@@ -741,6 +763,7 @@
 				3CC543F61E9DB44300848924 /* XFXTabBar.m in Sources */,
 				3CC544221E9DCB1400848924 /* NSBundle+Language.m in Sources */,
 				3CC544681E9E491700848924 /* XFXSubTagItem.m in Sources */,
+				3CC5447A1E9F205500848924 /* XFXLoginRegisterView.m in Sources */,
 				3CC5442E1E9DCB1400848924 /* UITextField+Category.m in Sources */,
 				3CC544231E9DCB1400848924 /* NSDictionary+Extension.m in Sources */,
 				3CE547E51E9CACCB009F7EE2 /* UIImage+Image.m in Sources */,
@@ -769,6 +792,7 @@
 				3CC544261E9DCB1400848924 /* NSString+Validate.m in Sources */,
 				3CC5442C1E9DCB1400848924 /* UIImage+RTTint.m in Sources */,
 				3CE547D81E9CA8C6009F7EE2 /* XFXFriendTrendViewController.m in Sources */,
+				3CC544761E9F17C100848924 /* XFXLoginRegisterViewController.m in Sources */,
 				3CC544241E9DCB1400848924 /* NSString+Category.m in Sources */,
 				3CC544281E9DCB1400848924 /* UIColor+Category.m in Sources */,
 				3CC544651E9E47EF00848924 /* XFXSubTagViewController.m in Sources */,

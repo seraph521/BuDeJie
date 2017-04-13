@@ -7,6 +7,7 @@
 //
 
 #import "XFXFriendTrendViewController.h"
+#import "XFXLoginRegisterViewController.h"
 
 @interface XFXFriendTrendViewController ()
 
@@ -16,7 +17,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor purpleColor];
     
     [self setupNavBar];
 }
@@ -27,6 +27,12 @@
     
     // titleView
     self.navigationItem.title = @"我的关注";
+}
+- (IBAction)clickLoginRegisterBtn:(id)sender {
+    
+    XFXLoginRegisterViewController * loginRegisterViewController = [[XFXLoginRegisterViewController alloc] init];
+    [self presentViewController:loginRegisterViewController animated:YES completion:nil];
+    
 }
 
 - (void)friendsRecomment{

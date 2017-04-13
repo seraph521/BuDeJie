@@ -12,6 +12,7 @@
 #import "XFXSubTagItem.h"
 #import <MJExtension/MJExtension.h>
 #import "XFXSubTagCell.h"
+#import <SVProgressHUD.h>
 
 static NSString * cellID  = @"CELLID";
 
@@ -31,6 +32,9 @@ static NSString * cellID  = @"CELLID";
     [self.tableView registerNib:[UINib nibWithNibName:@"XFXSubTagCell" bundle:nil] forCellReuseIdentifier:cellID];
     
     self.title = @"推荐标签";
+    
+    self.tableView.separatorInset = UIEdgeInsetsZero;
+    [SVProgressHUD showWithStatus:@"加载中"];
 }
 
 - (void)loadData{
@@ -41,12 +45,13 @@ static NSString * cellID  = @"CELLID";
     param.c = @"topic";
     
     [XFXNewTool sendSubTagWithParam:param success:^(id jsonData) {
-        
+        [SVProgressHUD dismiss];
         _subTags = [XFXSubTagItem mj_objectArrayWithKeyValuesArray:jsonData];
         [self.tableView reloadData];
         XFXLog(@"=======success");
 
     } failure:^(NSError *error) {
+        [SVProgressHUD dismiss];
         XFXLog(@"=======failure");
     }];
     
