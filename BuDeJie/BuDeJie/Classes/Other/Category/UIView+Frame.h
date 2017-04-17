@@ -14,5 +14,7 @@
 @property CGFloat xfx_height;
 @property CGFloat xfx_x;
 @property CGFloat xfx_y;
+@property CGFloat xfx_centerX;
+@property CGFloat xfx_centerY;
 
 @end

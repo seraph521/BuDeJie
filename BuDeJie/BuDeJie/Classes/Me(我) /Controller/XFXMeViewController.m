@@ -7,6 +7,7 @@
 //
 
 #import "XFXMeViewController.h"
+#import "XFXSettingViewController.h"
 
 @interface XFXMeViewController ()
 
@@ -48,8 +49,8 @@
 #pragma mark - 设置就会调用
 - (void)setting
 {
-    UIViewController * setVc = [[UIViewController alloc] init];
-    [self.navigationController pushViewController:setVc animated:YES];
+    XFXSettingViewController * settingViewController = [[XFXSettingViewController alloc] init];
+    [self.navigationController pushViewController:settingViewController animated:YES];
 }
 
 @end

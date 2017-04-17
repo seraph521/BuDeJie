@@ -57,4 +57,31 @@
 
     return  self.frame.origin.y;
 }
+
+- (CGFloat)xfx_centerX{
+
+    return  self.center.x;
+}
+
+- (void)setXfx_centerX:(CGFloat)xfx_centerX{
+
+    CGPoint center = self.center;
+    center.x = xfx_centerX;
+    self.center = center;
+}
+
+- (CGFloat)xfx_centerY{
+
+    return self.center.y;
+}
+
+- (void)setXfx_centerY:(CGFloat)xfx_centerY{
+
+    CGPoint center = self.center;
+    center.y = xfx_centerY;
+    self.center = center;
+}
+
+
+
 @end
